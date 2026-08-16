@@ -2,7 +2,7 @@
 
 **A Smart E-Learning Management System with AI-Based Predictive Analytics for Early Identification of At-Risk Students**
 
-University of the West of Scotland · MSc IT · Group 34
+University of the West of Scotland · MSc IT · Group 34P
 
 | Member | Component |
 | --- | --- |
