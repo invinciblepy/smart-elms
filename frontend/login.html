@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign in · Smart ELMS</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body data-page="login">
+  <a class="skip-link" href="#content">Skip to sign in</a>
+  <div class="auth-shell">
+    <aside class="auth-brand">
+      <h1>Smart ELMS</h1>
+      <p>Intelligent E-Learning with AI Predictive Analytics</p>
+      <div class="brand-foot">Early identification of at-risk students for better learning outcomes</div>
+    </aside>
+    <main class="auth-main" id="content">
+      <form class="auth-card" id="loginForm" novalidate>
+        <h2>Welcome back</h2>
+        <p class="sub">Sign in to continue to Smart ELMS</p>
+        <div id="formError" class="error" hidden role="alert"></div>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="you@university.edu" required autocomplete="username">
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" placeholder="••••••••" required autocomplete="current-password">
+        </div>
+        <div class="row-between field">
+          <label class="small" for="remember"><input id="remember" type="checkbox" name="remember"> Remember me</label>
+          <a class="small" href="/forgot">Forgot password?</a>
+        </div>
+        <button class="btn btn-block" type="submit">Sign in</button>
+        <p class="auth-foot">Don’t have an account? <a href="/register">Create account</a></p>
+        <p class="auth-foot small muted">Demo: student@university.edu or instructor@university.edu · Password123!</p>
+      </form>
+    </main>
+  </div>
+  <script src="/assets/js/api.js"></script>
+  <script src="/assets/js/layout.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>

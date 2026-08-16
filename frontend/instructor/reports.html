@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reports · Smart ELMS</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body class="app-body" data-role="instructor" data-page="reports">
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar"></aside>
+    <div class="main">
+      <header class="topbar"><h1>Reports</h1></header>
+      <main class="content">
+        <p class="muted">Charts are generated on the server with matplotlib and seaborn from live class data, as specified in the progress-tracking proposal. Tree and coefficient plots come from the trained scikit-learn models.</p>
+        <div id="charts" class="chart-grid"></div>
+      </main>
+    </div>
+  </div>
+  <script src="/assets/js/api.js"></script>
+  <script src="/assets/js/layout.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>

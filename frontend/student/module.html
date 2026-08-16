@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Module · Smart ELMS</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body class="app-body" data-role="student" data-page="module">
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar"></aside>
+    <div class="main">
+      <header class="topbar">
+        <div>
+          <p class="crumb" id="crumb"></p>
+          <h1 id="moduleTitle">Module</h1>
+        </div>
+      </header>
+      <main class="content">
+        <article class="card">
+          <p class="meta" id="moduleStatus"></p>
+          <p id="moduleBody"></p>
+          <div class="form-actions">
+            <button class="btn" id="completeBtn" type="button">Mark as completed</button>
+          </div>
+        </article>
+      </main>
+    </div>
+  </div>
+  <script src="/assets/js/api.js"></script>
+  <script src="/assets/js/layout.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>

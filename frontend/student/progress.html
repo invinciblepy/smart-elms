@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Progress · Smart ELMS</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body class="app-body" data-role="student" data-page="progress">
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar"></aside>
+    <div class="main">
+      <header class="topbar"><h1>My Progress</h1></header>
+      <main class="content">
+        <section class="stats">
+          <article class="stat green"><div class="num" id="avgProgress">–</div><div class="lbl">Average progress</div></article>
+          <article class="stat" style="grid-column:span 3"><div class="lbl" id="predBox">Loading prediction…</div></article>
+        </section>
+        <div id="progressList" class="grid-2"></div>
+      </main>
+    </div>
+  </div>
+  <script src="/assets/js/api.js"></script>
+  <script src="/assets/js/layout.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>

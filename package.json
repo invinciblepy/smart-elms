@@ -1,0 +1,19 @@
+{
+  "name": "smart-elms",
+  "version": "1.0.0",
+  "description": "**A Smart E-Learning Management System with AI-Based Predictive Analytics for Early Identification of At-Risk Students**",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "docx": "^9.7.1"
+  }
+}

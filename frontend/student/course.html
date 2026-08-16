@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Course · Smart ELMS</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body class="app-body" data-role="student" data-page="course">
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar"></aside>
+    <div class="main">
+      <header class="topbar">
+        <div>
+          <p class="crumb" id="crumb">My Courses</p>
+          <h1 id="courseTitle">Course</h1>
+        </div>
+      </header>
+      <main class="content">
+        <section class="card" style="margin-bottom:22px">
+          <h2 id="courseTitle2" class="visually-hidden"></h2>
+          <p class="meta" id="courseMeta"></p>
+          <div class="progress blue"><span id="courseBar" style="width:0%"></span></div>
+        </section>
+        <h2 class="section-title">Course Content</h2>
+        <div id="moduleList" class="list"></div>
+        <h2 class="section-title">Assignments</h2>
+        <div id="assignmentList" class="list"></div>
+      </main>
+    </div>
+  </div>
+  <script src="/assets/js/api.js"></script>
+  <script src="/assets/js/layout.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>

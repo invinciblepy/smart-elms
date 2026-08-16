@@ -1,0 +1,55 @@
+|--- login_frequency <= -0.52
+|   |--- assignment_submission_rate <= -0.64
+|   |   |--- avg_quiz_score <= 0.64
+|   |   |   |--- class: 1
+|   |   |--- avg_quiz_score >  0.64
+|   |   |   |--- avg_quiz_score <= 0.68
+|   |   |   |   |--- class: 0
+|   |   |   |--- avg_quiz_score >  0.68
+|   |   |   |   |--- class: 1
+|   |--- assignment_submission_rate >  -0.64
+|   |   |--- login_frequency <= -1.20
+|   |   |   |--- avg_quiz_score <= -0.65
+|   |   |   |   |--- class: 1
+|   |   |   |--- avg_quiz_score >  -0.65
+|   |   |   |   |--- assignment_submission_rate <= -0.06
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- assignment_submission_rate >  -0.06
+|   |   |   |   |   |--- class: 0
+|   |   |--- login_frequency >  -1.20
+|   |   |   |--- avg_quiz_score <= -0.13
+|   |   |   |   |--- days_since_last_login <= -0.26
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- days_since_last_login >  -0.26
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- avg_quiz_score >  -0.13
+|   |   |   |   |--- assignment_submission_rate <= 1.65
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- assignment_submission_rate >  1.65
+|   |   |   |   |   |--- class: 1
+|--- login_frequency >  -0.52
+|   |--- avg_quiz_score <= -1.80
+|   |   |--- class: 1
+|   |--- avg_quiz_score >  -1.80
+|   |   |--- assignment_submission_rate <= -0.60
+|   |   |   |--- login_frequency <= 0.39
+|   |   |   |   |--- avg_assignment_score <= 0.67
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- avg_assignment_score >  0.67
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- login_frequency >  0.39
+|   |   |   |   |--- days_since_last_login <= 2.31
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- days_since_last_login >  2.31
+|   |   |   |   |   |--- class: 1
+|   |   |--- assignment_submission_rate >  -0.60
+|   |   |   |--- avg_assignment_score <= -1.41
+|   |   |   |   |--- avg_quiz_score <= -0.34
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- avg_quiz_score >  -0.34
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- avg_assignment_score >  -1.41
+|   |   |   |   |--- days_since_last_login <= 1.83
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- days_since_last_login >  1.83
+|   |   |   |   |   |--- class: 0

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grade assignment · Smart ELMS</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body class="app-body" data-role="instructor" data-page="assignment">
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar"></aside>
+    <div class="main">
+      <header class="topbar">
+        <div>
+          <p class="crumb"><a href="/instructor/classes">My Classes</a></p>
+          <h1 id="assignTitle">Assignment</h1>
+        </div>
+      </header>
+      <main class="content">
+        <p class="muted" id="assignMeta"></p>
+        <div class="card">
+          <table>
+            <thead>
+              <tr><th>Student</th><th>Submitted</th><th>Comment</th><th>File</th><th>Score</th></tr>
+            </thead>
+            <tbody id="subBody"></tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="/assets/js/api.js"></script>
+  <script src="/assets/js/layout.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>

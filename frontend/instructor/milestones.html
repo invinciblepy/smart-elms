@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Milestones · Smart ELMS</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body class="app-body" data-role="instructor" data-page="milestones">
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar"></aside>
+    <div class="main">
+      <header class="topbar"><h1>Milestones</h1></header>
+      <main class="content">
+        <form class="card" id="addMile" style="margin-bottom:22px">
+          <h3>Define a milestone</h3>
+          <div class="grid-2">
+            <div class="field"><label for="courseSelect">Course</label><select name="course_id" id="courseSelect"></select></div>
+            <div class="field"><label for="mileTitle">Title</label><input id="mileTitle" name="title" required></div>
+            <div class="field"><label for="mileReq">Requirement</label>
+              <select id="mileReq" name="requirement_type">
+                <option value="course_progress">Course 70% complete</option>
+                <option value="assignment_submit">Assignment submitted</option>
+                <option value="quiz_attempt">Quiz attempted</option>
+                <option value="module_access">Module accessed</option>
+              </select>
+            </div>
+            <div class="field"><label for="mileDue">Due date</label><input id="mileDue" name="due_date" type="datetime-local"></div>
+            <div class="field"><label for="mileDesc">Description</label><input id="mileDesc" name="description"></div>
+            <div class="field" id="mileRefWrap" hidden>
+              <label for="mileRef">Linked item</label>
+              <select id="mileRef" name="requirement_ref_id"></select>
+            </div>
+          </div>
+          <button class="btn" type="submit">Add milestone</button>
+        </form>
+        <form class="card" id="editMile" hidden style="margin-bottom:22px">
+          <h3>Edit milestone</h3>
+          <input type="hidden" name="milestone_id">
+          <div class="grid-2">
+            <div class="field"><label for="editTitle">Title</label><input id="editTitle" name="title" required></div>
+            <div class="field"><label for="editDue">Due date</label><input id="editDue" name="due_date" type="datetime-local"></div>
+            <div class="field"><label for="editReq">Requirement</label>
+              <select id="editReq" name="requirement_type">
+                <option value="course_progress">Course 70% complete</option>
+                <option value="assignment_submit">Assignment submitted</option>
+                <option value="quiz_attempt">Quiz attempted</option>
+                <option value="module_access">Module accessed</option>
+              </select>
+            </div>
+            <div class="field"><label for="editDesc">Description</label><input id="editDesc" name="description"></div>
+            <div class="field" id="editRefWrap" hidden>
+              <label for="editRef">Linked item</label>
+              <select id="editRef" name="requirement_ref_id"></select>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button class="btn" type="submit">Save changes</button>
+            <button class="btn btn-ghost" type="button" id="cancelEdit">Cancel</button>
+          </div>
+        </form>
+        <div id="mileList" class="grid-2"></div>
+      </main>
+    </div>
+  </div>
+  <script src="/assets/js/api.js"></script>
+  <script src="/assets/js/layout.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>

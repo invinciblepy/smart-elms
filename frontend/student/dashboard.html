@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard · Smart ELMS</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body class="app-body" data-role="student" data-page="dashboard">
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar"></aside>
+    <div class="main">
+      <header class="topbar">
+        <h1>Dashboard</h1>
+        <input class="search" type="search" placeholder="Search courses..." aria-label="Search courses">
+      </header>
+      <main class="content">
+        <div id="aiBanner" class="banner" hidden></div>
+        <section class="stats" aria-label="Summary">
+          <article class="stat blue"><div class="num" id="statCourses">–</div><div class="lbl">Courses Enrolled</div></article>
+          <article class="stat green"><div class="num" id="statProgress">–</div><div class="lbl">Avg. Progress</div></article>
+          <article class="stat orange"><div class="num" id="statDue">–</div><div class="lbl">Assignments Due</div></article>
+          <article class="stat purple"><div class="num" id="statActive">–</div><div class="lbl">Days Active</div></article>
+        </section>
+        <h2 class="section-title">Upcoming deadlines</h2>
+        <div id="dueList" class="list" style="margin-bottom:22px"></div>
+        <h2 class="section-title">My Courses</h2>
+        <div id="courseGrid" class="grid-2"></div>
+      </main>
+    </div>
+  </div>
+  <script src="/assets/js/api.js"></script>
+  <script src="/assets/js/layout.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>

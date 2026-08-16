@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Forgot password · Smart ELMS</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body data-page="forgot">
+  <a class="skip-link" href="#content">Skip to password help</a>
+  <div class="auth-shell">
+    <aside class="auth-brand">
+      <h1>Smart ELMS</h1>
+      <p>Intelligent E-Learning with AI Predictive Analytics</p>
+      <div class="brand-foot">Contact your instructor if you cannot sign in</div>
+    </aside>
+    <main class="auth-main" id="content">
+      <form class="auth-card" id="forgotForm" novalidate>
+        <h2>Forgot password</h2>
+        <p class="sub">Enter the email on your account. For this demonstration, your instructor can confirm the password.</p>
+        <div id="formError" class="error" hidden role="alert"></div>
+        <div id="formOk" class="success" hidden role="status"></div>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="you@university.edu" required>
+        </div>
+        <button class="btn btn-block" type="submit">Send reminder</button>
+        <p class="auth-foot"><a href="/">Back to sign in</a></p>
+      </form>
+    </main>
+  </div>
+  <script src="/assets/js/api.js"></script>
+  <script src="/assets/js/layout.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>

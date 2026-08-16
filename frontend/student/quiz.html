@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Take quiz · Smart ELMS</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body class="app-body" data-role="student" data-page="quiz">
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar"></aside>
+    <div class="main">
+      <header class="topbar">
+        <div>
+          <p class="crumb" id="quizMeta"></p>
+          <h1 id="quizTitle">Quiz</h1>
+        </div>
+      </header>
+      <main class="content">
+        <div id="quizResult" class="success" hidden role="status"></div>
+        <form id="quizForm">
+          <div id="questions"></div>
+          <button class="btn" type="submit">Submit answers</button>
+        </form>
+      </main>
+    </div>
+  </div>
+  <script src="/assets/js/api.js"></script>
+  <script src="/assets/js/layout.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create account · Smart ELMS</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body data-page="register">
+  <a class="skip-link" href="#content">Skip to create account</a>
+  <div class="auth-shell">
+    <aside class="auth-brand">
+      <h1>Smart ELMS</h1>
+      <p>Intelligent E-Learning with AI Predictive Analytics</p>
+      <div class="brand-foot">Join thousands of students and instructors already using the platform</div>
+    </aside>
+    <main class="auth-main" id="content">
+      <form class="auth-card" id="registerForm" novalidate>
+        <h2>Create account</h2>
+        <p class="sub">Start your learning journey today</p>
+        <div id="formError" class="error" hidden role="alert"></div>
+        <div class="field">
+          <label for="full_name">Full name</label>
+          <input id="full_name" name="full_name" type="text" placeholder="Student User" required>
+        </div>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="you@university.edu" required>
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" placeholder="At least 8 characters" required>
+        </div>
+        <div class="field">
+          <label>I am a</label>
+          <input type="hidden" id="roleInput" name="role" value="student">
+          <div class="role-toggle">
+            <button type="button" class="active" data-role="student">Student</button>
+            <button type="button" data-role="instructor">Instructor</button>
+          </div>
+        </div>
+        <button class="btn btn-block" type="submit">Create account</button>
+        <p class="auth-foot">Already have an account? <a href="/">Sign in</a></p>
+      </form>
+    </main>
+  </div>
+  <script src="/assets/js/api.js"></script>
+  <script src="/assets/js/layout.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>

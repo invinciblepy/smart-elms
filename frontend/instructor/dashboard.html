@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instructor dashboard · Smart ELMS</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body class="app-body" data-role="instructor" data-page="dashboard">
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar"></aside>
+    <div class="main">
+      <header class="topbar"><h1>Instructor Dashboard</h1></header>
+      <main class="content">
+        <section class="stats">
+          <article class="stat blue"><div class="num" id="statStudents">–</div><div class="lbl">Total Students</div></article>
+          <article class="stat green"><div class="num" id="statEngage">–</div><div class="lbl">Avg Engagement</div></article>
+          <article class="stat red"><div class="num" id="statRisk">–</div><div class="lbl">At-Risk Students</div></article>
+          <article class="stat orange"><div class="num" id="statDue">–</div><div class="lbl">Assignments Due</div></article>
+        </section>
+        <h2 class="section-title">Deadline alerts</h2>
+        <div id="deadlineAlerts" class="list" style="margin-bottom:22px"></div>
+        <h2 class="section-title">Performance alerts</h2>
+        <div id="performanceAlerts" class="list" style="margin-bottom:22px"></div>
+        <h2 class="section-title">Class visualisations</h2>
+        <div id="dashCharts" class="chart-grid" style="margin-bottom:22px"></div>
+        <h2 class="section-title">Students needing attention</h2>
+        <div id="attentionList" class="list"></div>
+        <p class="muted"><a href="/instructor/reports">Open class reports and charts</a></p>
+        <div class="info-box">
+          <strong>Engagement monitoring active</strong>
+          <p>Days since last login and time spent on modules are tracked automatically. Students with high inactivity appear in the list above so you can intervene early.</p>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="/assets/js/api.js"></script>
+  <script src="/assets/js/layout.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>

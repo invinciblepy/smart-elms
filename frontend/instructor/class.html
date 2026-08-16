@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Class · Smart ELMS</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body class="app-body" data-role="instructor" data-page="class">
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar"></aside>
+    <div class="main">
+      <header class="topbar">
+        <div>
+          <p class="crumb">My Classes</p>
+          <h1 id="classTitle">Class</h1>
+        </div>
+      </header>
+      <main class="content">
+        <p class="muted" id="classMeta"></p>
+        <div class="grid-2">
+          <section>
+            <h2 class="section-title">Modules</h2>
+            <div id="moduleList" class="list"></div>
+            <form class="card" id="addModule" style="margin-top:12px">
+              <h3>Add module</h3>
+              <div class="field"><label for="moduleTitle">Title</label><input id="moduleTitle" name="title" required></div>
+              <div class="field"><label for="moduleContent">Content</label><textarea id="moduleContent" name="content" rows="3"></textarea></div>
+              <button class="btn" type="submit">Add module</button>
+            </form>
+          </section>
+          <section>
+            <h2 class="section-title">Assignments</h2>
+            <div id="assignmentList" class="list"></div>
+            <form class="card" id="addAssignment" style="margin-top:12px">
+              <h3>Add assignment</h3>
+              <div class="field"><label for="assignTitleIn">Title</label><input id="assignTitleIn" name="title" required></div>
+              <div class="field"><label for="assignDesc">Description</label><input id="assignDesc" name="description"></div>
+              <div class="field"><label for="assignDue">Due date</label><input id="assignDue" name="due_date" type="datetime-local"></div>
+              <button class="btn" type="submit">Add assignment</button>
+            </form>
+          </section>
+        </div>
+        <h2 class="section-title">Quizzes</h2>
+        <div id="quizList" class="list"></div>
+        <form class="card" id="addQuiz" style="margin-top:12px">
+          <h3>Create a quiz</h3>
+          <div class="field"><label for="quizTitle">Title</label><input id="quizTitle" name="title" required></div>
+          <div id="quizQuestions"></div>
+          <button class="btn btn-ghost" type="button" id="addQuestionBtn">Add question</button>
+          <button class="btn" type="submit">Save quiz</button>
+        </form>
+        <h2 class="section-title">Roster</h2>
+        <div class="card">
+          <table>
+            <thead><tr><th>Student</th><th>Progress</th><th>Risk</th><th>Last login</th></tr></thead>
+            <tbody id="roster"></tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="/assets/js/api.js"></script>
+  <script src="/assets/js/layout.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>

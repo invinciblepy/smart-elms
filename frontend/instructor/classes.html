@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Classes · Smart ELMS</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body class="app-body" data-role="instructor" data-page="classes">
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar"></aside>
+    <div class="main">
+      <header class="topbar"><h1>My Classes</h1></header>
+      <main class="content">
+        <form class="card" id="createCourse" style="margin-bottom:22px">
+          <h3>Create a course</h3>
+          <div class="grid-2">
+            <div class="field"><label for="courseTitle">Title</label><input id="courseTitle" name="title" required></div>
+            <div class="field"><label for="courseDesc">Description</label><input id="courseDesc" name="description"></div>
+          </div>
+          <button class="btn" type="submit">Create course</button>
+        </form>
+        <div id="classGrid" class="grid-2"></div>
+      </main>
+    </div>
+  </div>
+  <script src="/assets/js/api.js"></script>
+  <script src="/assets/js/layout.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>

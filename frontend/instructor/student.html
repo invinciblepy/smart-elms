@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student profile · Smart ELMS</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body class="app-body" data-role="instructor" data-page="student">
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar"></aside>
+    <div class="main">
+      <header class="topbar">
+        <div>
+          <p class="crumb">Students</p>
+          <h1 id="studentName">Student</h1>
+        </div>
+        <button class="btn" id="refreshPred" type="button">Refresh AI prediction</button>
+      </header>
+      <main class="content">
+        <p class="muted" id="studentMeta"></p>
+        <p id="risk"></p>
+        <h2 class="section-title">Model features</h2>
+        <div id="feat" class="stats"></div>
+        <h2 class="section-title">Courses</h2>
+        <div id="courses" class="grid-2"></div>
+        <h2 class="section-title">Assignment scores</h2>
+        <div class="card">
+          <table>
+            <thead><tr><th>Assignment</th><th>Score</th><th>Submitted</th></tr></thead>
+            <tbody id="submissions"></tbody>
+          </table>
+        </div>
+        <h2 class="section-title">Quiz attempts</h2>
+        <div class="card">
+          <table>
+            <thead><tr><th>Quiz</th><th>Score</th><th>Attempted</th></tr></thead>
+            <tbody id="attempts"></tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="/assets/js/api.js"></script>
+  <script src="/assets/js/layout.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Courses · Smart ELMS</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body class="app-body" data-role="student" data-page="courses">
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar"></aside>
+    <div class="main">
+      <header class="topbar">
+        <h1>My Courses</h1>
+        <input class="search" id="courseSearch" type="search" placeholder="Search courses..." aria-label="Search courses">
+      </header>
+      <main class="content">
+        <h2 class="section-title">Enrolled</h2>
+        <div id="enrolledGrid" class="grid-2"></div>
+        <h2 class="section-title">Available to enrol</h2>
+        <div id="availableGrid" class="grid-2"></div>
+      </main>
+    </div>
+  </div>
+  <script src="/assets/js/api.js"></script>
+  <script src="/assets/js/layout.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>

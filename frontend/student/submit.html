@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Submit assignment · Smart ELMS</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body class="app-body" data-role="student" data-page="submit">
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar"></aside>
+    <div class="main">
+      <header class="topbar">
+        <div>
+          <p class="crumb" id="crumb"></p>
+          <h1>Submit assignment</h1>
+        </div>
+      </header>
+      <main class="content">
+        <form class="card" id="submitForm" style="max-width:720px;margin:0 auto">
+          <h2 id="assignTitle">Submit assignment</h2>
+          <p class="muted" id="assignDesc"></p>
+          <p class="due" id="assignMeta"></p>
+          <div id="existing" class="success" hidden></div>
+          <div id="formError" class="error" hidden role="alert"></div>
+          <div id="formOk" class="success" hidden role="status"></div>
+          <div class="field">
+            <label for="comment">Written answer / comments</label>
+            <textarea id="comment" name="comment" rows="5" placeholder="Add any comments for your instructor..."></textarea>
+          </div>
+          <div class="field">
+            <label for="fileInput">Upload files (PDF, DOCX or TXT, max 10 MB)</label>
+            <input id="fileInput" class="visually-hidden" type="file" accept=".pdf,.docx,.txt">
+            <div class="dropzone" id="dropzone" role="button" tabindex="0" aria-controls="fileInput">
+              <span>Drag and drop your file here, or click to select</span>
+            </div>
+          </div>
+          <button class="btn" type="submit">Submit assignment</button>
+        </form>
+      </main>
+    </div>
+  </div>
+  <script src="/assets/js/api.js"></script>
+  <script src="/assets/js/layout.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>
